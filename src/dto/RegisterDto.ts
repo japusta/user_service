@@ -1,4 +1,3 @@
-// src/dto/RegisterDto.ts
 import {
   IsNotEmpty,
   IsEmail,
@@ -13,7 +12,7 @@ export class RegisterDto {
   @IsNotEmpty({ message: "fullName не должен быть пустым" })
   fullName!: string;
 
-  @IsDateString({}, { message: "birthDate должен быть ISO-8601 дату" })
+  @IsDateString({}, { message: "birthDate должен быть ISO-8601" })
   birthDate!: string;
 
   @IsEmail({}, { message: "email должен быть валидным" })

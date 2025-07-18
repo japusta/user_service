@@ -1,4 +1,3 @@
-// src/middlewares/authMiddleware.ts
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 
@@ -19,7 +18,6 @@ export function authMiddleware(
   const token = parts[1];
   try {
     const payload = jwt.verify(token, process.env.JWT_SECRET!) as any;
-    // вместо req.user:
     res.locals.user = { id: payload.sub, role: payload.role };
     next();
   } catch {

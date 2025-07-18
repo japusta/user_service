@@ -1,4 +1,3 @@
-# ─── STAGE 1: Builder ─────────────────────────────
 FROM node:20-alpine AS builder
 WORKDIR /usr/src/app
 
@@ -38,3 +37,4 @@ EXPOSE 3000
 
 # 3) Запускаем приложение
 CMD ["sh", "-c", "npm run prisma:migrate && npm run seed:prod && npm run start"]
+

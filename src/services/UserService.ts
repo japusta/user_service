@@ -41,7 +41,7 @@ export class UserService implements IUserService {
     // запретить логин заблокированным
     if (user.status !== UserStatus.ACTIVE) {
       const err = new Error("User is blocked");
-      (err as any).status = 401; // <-- вот этот код
+      (err as any).status = 401;
       throw err;
     }
     const valid = await bcrypt.compare(password, user.passwordHash);

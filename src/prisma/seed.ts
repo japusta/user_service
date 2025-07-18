@@ -1,4 +1,3 @@
-// src/prisma/seed.ts
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -21,7 +20,7 @@ async function main() {
       status: "ACTIVE",
     },
   });
-  console.log("👑 Admin created or updated");
+  console.log("Admin created or updated");
 }
 
 main()

@@ -107,9 +107,9 @@ beforeEach(() => {
     // });
 
      it('returns user on admin request', async () => {
-   // 1st call → requestor, мы хотим ADMIN
+   // 1s call => requestor, мы хотим ADMIN
    repo.findById.mockResolvedValueOnce({ ...fakeUser, role: UserRole.ADMIN });
-   // 2nd call → target, возвращаем обычного fakeUser
+   // 2 call => target, возвращаем обычного fakeUser
    repo.findById.mockResolvedValueOnce(fakeUser);
 
    const u = await service.getById('admin-id', 'target-id');
