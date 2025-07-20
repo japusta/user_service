@@ -1,5 +1,5 @@
-<img width="1244" height="689" alt="image" src="https://github.com/user-attachments/assets/e56ae259-5a58-49bc-a1b3-ae621ffd37b9" /># Сервис управления пользователями
 
+# Сервис управления пользователями
 Простой REST‑сервис на Express + TypeScript + Prisma для работы с пользователями.
 
 ---
@@ -147,6 +147,16 @@ ESLint и Prettier для единообразного стиля
 
 <img width="1228" height="464" alt="image" src="https://github.com/user-attachments/assets/6d5d2024-7978-439d-bd1e-7024145dd3e8" />
 
+<img width="1244" height="689" alt="image" src="https://github.com/user-attachments/assets/e56ae259-5a58-49bc-a1b3-ae621ffd37b9" />
+
+
 ### Результаты тестов
 
 <img width="899" height="732" alt="image" src="https://github.com/user-attachments/assets/83e12ba5-a492-42df-b57f-d2709049a2a1" />
+
+
+### Работа сервиса в контейнере
+
+<img width="1240" height="852" alt="image" src="https://github.com/user-attachments/assets/0390967b-f901-4a4b-a246-b172378a1202" />
+
+<img width="1551" height="848" alt="image" src="https://github.com/user-attachments/assets/5bf50e58-c281-42bb-8dc7-e926c136f7ff" />
